@@ -1,54 +1,110 @@
-# React + TypeScript + Vite
+# 🛍️ E-Commerce Product Showcase
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a React + TypeScript front-end application built as part of a Software Development Engineer practical assessment for **Ajmera Infotech**. It simulates an e-commerce interface by showcasing products using the [DummyJSON API](https://dummyjson.com), with features like product browsing, cart management, and simulated authentication.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Watch Demo
 
-## Expanding the ESLint configuration
+watch: [https://www.youtube.com/watch?v=Mn68kGyBDmc](https://www.youtube.com/watch?v=Mn68kGyBDmc)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🚀 Features
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+### ✅ Implemented
+
+- **Product Listing (Home Page)**
+
+  - Fetches products using pagination (`limit` and `skip`).
+  - Each product displays name, price, description, image, and an "Add to Cart" button.
+
+- **Navigation Bar**
+
+  - Displays:
+    - User login status ("Logged In" / "Logged Out").
+    - Logged-in user's name.
+    - Total cart value.
+
+- **Shopping Cart**
+
+  - Add items from listing page.
+  - Increase/decrease quantity, remove items.
+  - Total value updates dynamically.
+
+- **Authentication**
+
+  - Simple login with any non-empty username and password.
+  - Stores dummy token in `localStorage`.
+  - Updates UI upon login.
+
+- **Product Details Page**
+
+  - Category-based filtering.
+  - Sorting based on the price.
+  - Seach product based on their name.
+
+- **State Management**
+  - Implemented using Redux for global state handling.
+
+---
+
+## 🛠 Tech Stack
+
+- **Frontend**: React (via Vite), TypeScript
+- **State Management**: Redux
+- **API**: DummyJSON
+- **Styling**: Tailwind CSS , Material UI
+
+---
+
+## 📁 Folder Structure
+
+```
+harshmaniar1804-e-commerce-product-showcase/
+├── public/
+├── src/
+│   ├── components/           # UI elements like Navbar, ProductCard
+│   ├── pages/                # Page views: Login, Cart, ProductList
+│   ├── services/             # API interactions
+│   ├── store/                # Redux store for global state
+│   ├── types/                # Shared TypeScript types
+│   ├── App.tsx
+│   └── main.tsx
+├── index.html
+├── package.json
+├── tsconfig.json
+├── vite.config.ts
+└── README.md
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 📦 Getting Started
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+1. **Clone the repository**
+
+```bash
+git clone https://github.com/your-username/harshmaniar1804-e-commerce-product-showcase.git
+cd harshmaniar1804-e-commerce-product-showcase
 ```
+
+2. **Install dependencies**
+
+```bash
+npm install
+```
+
+3. **Run the development server**
+
+```bash
+npm run dev
+```
+
+4. **Open in browser**
+
+Visit: [http://localhost:5173](http://localhost:5173)
+
+---
+
+## ✍️ Author
+
+**Harsh Maniar**
