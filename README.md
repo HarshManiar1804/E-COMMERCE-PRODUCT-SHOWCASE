@@ -83,7 +83,7 @@ harshmaniar1804-e-commerce-product-showcase/
 1. **Clone the repository**
 
 ```bash
-git clone https://github.com/your-username/harshmaniar1804-e-commerce-product-showcase.git
+git clone git@github.com:HarshManiar1804/E-COMMERCE-PRODUCT-SHOWCASE.git
 cd harshmaniar1804-e-commerce-product-showcase
 ```
 
