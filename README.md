@@ -84,7 +84,7 @@ harshmaniar1804-e-commerce-product-showcase/
 
 ```bash
 git clone git@github.com:HarshManiar1804/E-COMMERCE-PRODUCT-SHOWCASE.git
-cd harshmaniar1804-e-commerce-product-showcase
+cd E-COMMERCE-PRODUCT-SHOWCASE
 ```
 
 2. **Install dependencies**
