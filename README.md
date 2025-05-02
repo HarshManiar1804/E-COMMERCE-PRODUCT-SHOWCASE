@@ -43,14 +43,14 @@ watch: [https://www.youtube.com/watch?v=Mn68kGyBDmc](https://www.youtube.com/wat
   - Seach product based on their name.
 
 - **State Management**
-  - Implemented using Redux for global state handling.
+  - Implemented using zustand for global state handling.
 
 ---
 
 ## 🛠 Tech Stack
 
 - **Frontend**: React (via Vite), TypeScript
-- **State Management**: Redux
+- **State Management**: zustand
 - **API**: DummyJSON
 - **Styling**: Tailwind CSS , Material UI
 
@@ -65,7 +65,7 @@ harshmaniar1804-e-commerce-product-showcase/
 │   ├── components/           # UI elements like Navbar, ProductCard
 │   ├── pages/                # Page views: Login, Cart, ProductList
 │   ├── services/             # API interactions
-│   ├── store/                # Redux store for global state
+│   ├── store/                # zustand store for global state
 │   ├── types/                # Shared TypeScript types
 │   ├── App.tsx
 │   └── main.tsx

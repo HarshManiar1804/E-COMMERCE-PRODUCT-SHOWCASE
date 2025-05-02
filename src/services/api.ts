@@ -16,10 +16,6 @@ export const api = {
       );
       return response.data;
     },
-    getById: async (id: number) => {
-      const response = await axiosInstance.get(`/products/${id}`);
-      return response.data;
-    },
     getCategories: async () => {
       const response = await axiosInstance.get("/products/categories");
       return response.data;
